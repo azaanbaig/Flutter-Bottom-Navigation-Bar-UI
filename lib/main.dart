@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_app/appbar.dart';
+import 'package:my_first_app/bottom_nav_bar.dart.dart';
+// Import the correct file
 
 void main() {
   runApp(MyApp());
@@ -15,9 +16,9 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue,
-          title: Center(child: Text("Hello World")),
+          title: const Center(child: Text("Hello World")),
         ),
-        body: TapBar(),
+        body: const TapBar(), // Corrected from TagBar to TapBar
       ),
     );
   }
